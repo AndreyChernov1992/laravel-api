@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -15,12 +16,11 @@ class RacerFactory extends Factory
      * @return array<string, mixed>
      */
     public function definition(): array
-    {
-        return [
-            "short" => $this->faker->name(),
-            "racer" => $this->faker->name(),
-            "time" => $this->faker->unique()->randomDigit(),
-            "mark" => $this->faker->name() 
-        ];
+    {   
+            return [
+                "short",
+                "racer",
+                "time",
+            ];
     }
 }

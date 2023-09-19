@@ -12,7 +12,6 @@ class Racer extends Model
     protected $fillable = [
       "short",
       "racer",
-      "time",
-      "mark"  
+      "time"
     ];
 }
