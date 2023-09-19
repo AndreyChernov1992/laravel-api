@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('racers', function (Blueprint $table) {
             $table->id();
             $table->string("short")->nullable();
-            $table->string("racer")->nullable();
+            $table->string("name")->nullable();
             $table->time("time")->nullable();
             $table->timestamps();
         });

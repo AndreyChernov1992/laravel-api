@@ -19,7 +19,7 @@ class RacerFactory extends Factory
     {   
             return [
                 "short",
-                "racer",
+                "name",
                 "time",
             ];
     }

@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
                 $racer = new Racer;
                 $racer->short = $key;
                 $racer->time = $value; 
-                $racer->racer = $racerName[$key];
+                $racer->name = $racerName[$key];
                 $racer->save();
         }
     }
