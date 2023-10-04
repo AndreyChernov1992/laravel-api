@@ -20,7 +20,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('racers', MainController::class);
+Route::resource('racers', MainController::class, ['only' => [
+    'home', 'report', 'drivers', 'racer'
+]]);
 
 Route::get('/racers', [ApiController::class, 'index']);
 
