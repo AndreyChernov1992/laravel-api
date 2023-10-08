@@ -47,7 +47,7 @@ class MainController extends Controller
 
     }
 
-    public function racer(Request $request)
+    public function racer(Request $request) 
     {
 
         $finalTime = new GetRacersListFacade;

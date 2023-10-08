@@ -10,12 +10,12 @@ use SimpleXMLElement;
 class ApiController extends Controller
 {
 
-    public function index()
+    public function index() :object
     {
         return ApiResources::collection(Racer::all());
     }
 
-    public function xml()
+    public function xml() :string
     {
         $json = Racer::all();
         $array = json_decode($json, true);

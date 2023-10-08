@@ -1,9 +1,11 @@
 <?php
 namespace App\Services;
 
-class ArrayParse {
+class ArrayParse 
+{
 
-    public function getArray(string $str) :array {
+    public function getArray(string $str) :array 
+    {
         
         $arr = [];
         $result = file($str, FILE_IGNORE_NEW_LINES);
